@@ -11,7 +11,6 @@ namespace GerenciamentodeHotel.Services
     {
         public Hospede Hospede { get; set; }
         public Quarto Quarto { get; set; }
-        public Funcionario Funcionario { get; set; }
         public List<Aluguel> Alugueis { get; set; }
     }
 }

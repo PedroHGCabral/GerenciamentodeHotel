@@ -11,7 +11,6 @@ namespace GerenciamentodeHotel.Entities
         public string Nome { get; set; }
         public string Cpf { get; set; }
         public List<Dependente> Dependentes { get; set; }
-        public List<Hospede> Hospedes { get; set; }
 
         public Hospede()
         {
@@ -34,6 +33,10 @@ namespace GerenciamentodeHotel.Entities
         public void DelDependente(Dependente dependente)
         {
             Dependentes.Remove(dependente);
+        }
+        public override string ToString()
+        {
+            return $"Nome: {Nome}, Cpf: {Cpf}";
         }
     }
 }
