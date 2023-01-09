@@ -16,11 +16,11 @@ namespace GerenciamentodeHotel.Entities
         {
         }
 
-        public Hospede(string nome, string cpf, char dependente)
+        public Hospede(string nome, string cpf, string dependente)
         {
             Nome = nome;
             Cpf = cpf;
-            if (dependente == 's')
+            if (dependente == "s")
             {
                 Dependentes = new List<Dependente>();
             }
